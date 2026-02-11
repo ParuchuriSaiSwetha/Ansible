@@ -1,0 +1,24 @@
+- name : "Swetha"
+  DOB : "11-11-1111"
+  MobileNumber : 9999999999
+  Address :
+  - FlatNumber : 101
+    Street : "ABC"
+    city : "XYZ"
+    type : "permanent"
+  - FlatNumber : 101
+    Street : "ABC"
+    city : "XYZ"
+    type : "Current"
+- name : "Swe"
+  DOB : "11-11-1111"
+  MobileNumber : 1234567890
+  Address :
+  - FlatNumber : 101
+    Street : "ABC"
+    city : "XYZ"
+    type : "permanent"
+  - FlatNumber : 101
+    Street : "ABC"
+    city : "XYZ"
+    type : "Current"

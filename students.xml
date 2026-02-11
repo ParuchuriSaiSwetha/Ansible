@@ -1,0 +1,26 @@
+<!-- Student object we are creating
+if we are not tagging sub tags then it is called field or else it is called object -->
+<students>
+    <student>
+        <FirstName>CD</FirstName>
+        <DOB>25-10-1998</DOB>
+        <email>CD@gmail.com</email>
+        <!-- <address> chennai </address> -->
+        <Address>
+            <FlatNo> 123 </FlatNo>
+            <street> XYZ </street>
+            <city> ABC </city>
+        </Address>
+    </student>
+    <student>
+        <FirstName>AB</FirstName>
+        <DOB>30-11-1999</DOB>
+        <email>AB@gmail.com</email>
+        <!-- <address> chennai </address> -->
+        <Address>
+            <FlatNo> 123 </FlatNo>
+            <street> XYZ </street>
+            <city> ABC </city>
+        </Address>
+    </student>
+</students>
