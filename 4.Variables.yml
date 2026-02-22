@@ -1,5 +1,6 @@
 - name : Types of Variables
   hosts: local
+  become : yes
   connection: local #if we will give connection local not needed to provide username and password while running the ansible code
   #for running ansible-playbook -i inventory.ini 4.Variables.yml
   vars : #defining variables in vars which means it is declared as globally and we ca use it any where
