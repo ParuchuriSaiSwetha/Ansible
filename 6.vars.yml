@@ -4,7 +4,7 @@
   connection: local #if we will give connection local not needed to provide username and password while running the ansible code
   #for running ansible-playbook -i inventory.ini 6.vars.yml
   vars_files: #It is used to call the variable files which we have created separately and give in the code
-  - Course.yaml
+    - Course.yaml
   tasks :
   - name : "Printing the statement by using variables"
   #If we will give variables inside the task then it will take primary variable in task and it will ignore global variable.
