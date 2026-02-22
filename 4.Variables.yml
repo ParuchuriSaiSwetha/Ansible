@@ -11,8 +11,8 @@
     ansible.builtin.debug:
       msg : "I’m learning {{ Course }}, focusing on {{ Topic }} today, on {{ Date }}"
   - name : "Install and start nginx"
-    ansible.builtin.playbook:
-      name: nginx
-      state: present
+    ansible.builtin.package:
+    name: nginx
+    state: present
 
 
