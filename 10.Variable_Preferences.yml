@@ -3,8 +3,8 @@
   connection : local
   vars:
     NAME: "Global Variables"
-  vars_files:
-  - Course.yaml
+  # vars_files:
+  # - Course.yaml
   vars_prompt:
     - name : NAME
       prompt: "Please enter name"
@@ -18,4 +18,6 @@
 
 # if you are giving all the types of variables 1st priority is arguments
 # 1.Arguments (ansible-playbook -i inventory.ini -e 'NAME="Swetha"' 10.Variable_Preferences.yml)
-#2.Tasks
+#2.Tasks (ansible-playbook -i inventory.ini 10.Variable_Preferences.yml)
+#3.Files
+#4.
