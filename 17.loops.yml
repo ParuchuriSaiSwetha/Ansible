@@ -5,7 +5,7 @@
   tasks:
   - name: "Printing names which are in the loops"
     ansible.builtin.debug:
-      msg: "{{list}}"
+      msg: "{{item}}"
     loop:
     - Swetha
     - Swe
