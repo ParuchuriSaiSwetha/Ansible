@@ -6,7 +6,6 @@
   - name : Command module example for checking the date
     ansible.builtin.command: date
     register: date
-  tasks :
   - name : "Executing the Command module for current date"
     ansible.builtin.debug:
       msg : "Today date is {{date}}"
