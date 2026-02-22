@@ -8,5 +8,4 @@
     register: date
   - name : "Executing the Command module for current date"
     ansible.builtin.debug:
-      msg : | 
-      Date : "Today date is {{date.stdout}}"
+      msg : "Today date is {{date.stdout}}"
