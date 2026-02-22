@@ -8,7 +8,7 @@
     Details: #map(key:value pair)
       Months : 4
       Course : "Devops"
-    Topics:
+    Topics: #Lists
     - Linux
     - Ansible
     - shell
