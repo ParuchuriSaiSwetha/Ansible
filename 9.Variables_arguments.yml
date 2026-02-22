@@ -7,4 +7,4 @@
     ansible.builtin.debug:
       msg : "Hi {{NAME}}"
 #we have to pass arguments while running the file
-#ansible-playbook -i inventory.ini -e 'NAME="SAI SWETHA" 9.Variables_arguments.yml
+#ansible-playbook -i inventory.ini -e 'NAME="SAI SWETHA"' 9.Variables_arguments.yml

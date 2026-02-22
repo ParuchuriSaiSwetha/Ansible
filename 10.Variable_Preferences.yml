@@ -1,0 +1,17 @@
+- name : Variable Preferences
+  hosts: local
+  connection : local
+  vars:
+    NAME: "Global Variables"
+  vars_files:
+  - Course.yaml
+  vars_prompts:
+    - name : NAME
+      prompt: "Please enter name"
+      private: false
+  tasks:
+  - name: "Print name"
+    vars:
+      NAME: "Printing from tasks"
+    ansible.builtin.debug:
+      msg: "Hi {{NAME}}"
