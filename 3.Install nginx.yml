@@ -2,7 +2,15 @@
   hosts: web
   become: yes
   tasks :
+  #for installing packages we have to use ansible.builtin.package module for default
+  # to run the file we have to use ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 3.Install\ nginx.yml
   - name: Insalling nginx
     ansible.builtin.package:
       name : nginx
       state : present
+  - name : Start nginx
+  #to start the service ansible.builtin.service module is default
+    ansible.builtin.service:
+      name : nginx
+      state: started
+      enable : yes
