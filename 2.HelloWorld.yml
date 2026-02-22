@@ -4,3 +4,4 @@
   - name : Hello World
     ansible.builtin.debug :
       msg : "Writing My First Hello world code "
+      # For priniting we will use inbuilt function as ansible.builtin.debug and giving message, it is same as echo in shell scripting
