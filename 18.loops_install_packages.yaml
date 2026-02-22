@@ -1,13 +1,13 @@
-- name: demo on loops
+- name: Installing Packages
   hosts: local
   connection : local
   become : yes
   tasks:
-  - name: "Printing names which are in the loops"
+  - name: "Installing Packages"
     ansible.builtin.package:
-      msg: "{{item}}"
+      name: "{{item}}"
       state: present
     loop:
     - nginx
     - mysql
-#ansible-playbook -i inventory.ini 17.loops_install_packages.yml
+#ansible-playbook -i inventory.ini 17.loops_install_packages.yaml
