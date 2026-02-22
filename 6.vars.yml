@@ -2,11 +2,9 @@
   hosts: local
   become : yes
   connection: local #if we will give connection local not needed to provide username and password while running the ansible code
-  #for running ansible-playbook -i inventory.ini 5.task_leve_variables.yml
-  vars : #defining variables in vars which means it is declared as globally and we ca use it any where
-    Course: "Devops"
-    Topic : "Ansible"
-    Date : "22-Feb-2026"
+  #for running ansible-playbook -i inventory.ini 6.vars.yml
+  vars_files: #It is used to call the variable files which we have created separately and give in the code
+  - Course.yaml
   tasks :
   - name : "Printing the statement by using variables"
   #If we will give variables inside the task then it will take primary variable in task and it will ignore global variable.
