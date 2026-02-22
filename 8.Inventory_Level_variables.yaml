@@ -1,0 +1,8 @@
+- name : Inventory Level Variables
+  hosts : local
+  connection : local
+  become : yes
+  tasks :
+  - name : "Printing variables from inventory level"
+  absible.builtin.debug:
+    msg : "Variables are printing from {{Course}}"
