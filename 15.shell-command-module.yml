@@ -9,3 +9,12 @@
   - name : "Executing the Command module for current date"
     ansible.builtin.debug:
       msg : "Today date is {{date.stdout}}"
+
+  - name: Count logged-in users
+    shell: who | wc -l
+
+  # - name: Save date output to a file
+  #   shell: date > /tmp/date.txt
+
+  # - name: Use environment variable
+  #   shell: echo $HOME
