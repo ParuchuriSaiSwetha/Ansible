@@ -8,3 +8,7 @@
     ansible.builtin.debug:
       msg : "Since is_live is true, i am printing it"
     when: is_live
+
+#if it is false output will be skipping same as below
+# TASK [trying to print Conditions] *******************************************************************************************************************************************************************************************************************
+# skipping: [localhost]
