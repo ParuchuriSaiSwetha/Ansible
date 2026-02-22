@@ -1,0 +1,24 @@
+- name : Data types in Ansible
+  hosts : local
+  connection : local
+  vars:
+    Program : "Devops with AWS" #String
+    Duration: 140 #integer
+    Is_Live: true #bool
+    Details: #map(key:value pair)
+      Months : 4
+      Course : "Devops"
+    Topics:
+    - Linux
+    - Ansible
+    - shell
+    - terraform
+  tasks:
+  - name : Printing the variables
+    ansible.builtin.debug: 
+      msg: |
+        Program : {{Program}}
+        Duration : {{Duration}}
+        Is_Live : {{Is_Live}}
+        Details: {{Details}}
+        Topics: {{Topics}}
