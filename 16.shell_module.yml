@@ -1,0 +1,30 @@
+---
+- name: Example using shell module
+  hosts: local
+  connection: local
+  become: yes
+
+  tasks:
+    - name: Count logged-in users
+      shell: who | wc -l
+      register: logged_users
+
+    - name: Display logged-in users count
+      debug:
+        msg: "Number of logged-in users: {{ logged_users.stdout }}"
+
+    - name: Save date output to a file
+      shell: date > /tmp/date.txt
+      register: date_file_status
+
+    - name: Show status of file creation
+      debug:
+        msg: "Command return code: {{ date_file_status.rc }}"
+
+    - name: Use environment variable
+      shell: echo $HOME
+      register: home_dir
+
+    - name: Display HOME directory
+      debug:
+        msg: "Home directory is: {{ home_dir.stdout }}"
