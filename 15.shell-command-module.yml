@@ -4,9 +4,8 @@
   become: yes
   tasks:
   - name : Command module example for checking the date
-    ansible.builtin.command: 
-      command : date
-      register: date
+    ansible.builtin.command: date
+    register: date
   tasks :
   - name : "Executing the Command module for current date"
     ansible.builtin.debug:
