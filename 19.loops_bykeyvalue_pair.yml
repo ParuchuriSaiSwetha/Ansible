@@ -1,13 +1,23 @@
+---
 - name: install packages
   hosts: local
   connection: local
   become: yes
+
   tasks:
-  - name: install package
-    ansible.builtin.package:
-      name: "{{ item.name }}"
-      state: "{{ item.state }}"
-    loop: # list of map
-    - { name: "mysql", state: "absent"} # map/dict
-    - { name: "nginx", state: "present"}
-    - { name: "zip", state: "present"}
+    - name: install/uninstall packages
+      ansible.builtin.package:
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+      loop: # list of map
+        - { name: "mysql", state: "absent" }
+        - { name: "nginx", state: "present" }
+        - { name: "zip", state: "present" }
+      register: package_result
+
+    - name: Display status message
+      ansible.builtin.debug:
+        msg: >
+          {{ item.item.name }} is
+          {{ 'installed' if item.item.state == 'present' else 'uninstalled' }}
+      loop: "{{ package_result.results }}"
