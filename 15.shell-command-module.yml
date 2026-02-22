@@ -11,4 +11,4 @@
     ansible.builtin.debug:
       msg : | 
       Date : "Today date is {{date.stdout}}"
-      Current_date: {{current_date}}
+      Current_date: "{{current_date}}"
