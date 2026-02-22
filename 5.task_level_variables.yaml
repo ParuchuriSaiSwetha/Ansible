@@ -1,0 +1,15 @@
+- name : Types of Variables
+  hosts: local
+  become : yes
+  connection: local #if we will give connection local not needed to provide username and password while running the ansible code
+  #for running ansible-playbook -i inventory.ini 4.Variables.yml
+  vars : #defining variables in vars which means it is declared as globally and we ca use it any where
+    Course: "Devops"
+    Topic : "Ansible"
+    Date : "22-Feb-2026"
+  tasks :
+  - name : "Printing the statement by using variables"
+    vars: 
+      Date : "23-Feb-2026"
+    ansible.builtin.debug:
+      msg : "I’m learning {{ Course }}, focusing on {{ Topic }} today, on {{ Date }}"
