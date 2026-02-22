@@ -4,10 +4,10 @@
   become : yes
   tasks:
   - name: "Printing names which are in the loops"
-    ansible.builtin.debug:
+    ansible.builtin.package:
       msg: "{{item}}"
+      state: present
     loop:
-    - Swetha
-    - Swe
-    - SP
-#ansible-playbook -i inventory.ini 17.loops.yml
+    - nginx
+    - mysql
+#ansible-playbook -i inventory.ini 17.loops_install_packages.yml
