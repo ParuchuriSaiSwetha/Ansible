@@ -1,0 +1,42 @@
+{
+    "Students" : [
+        { 
+            "FirstName" : "Swetha",
+    "DOB" : "1111-11-11",
+    "Addresses" : [
+        {
+            "type" : "Premenant Addresses",
+            "Flat NO" : 101,
+            "Street" : "ABC",
+            "city" : "XYZ"
+        },
+        {
+            "type" : "Current Addresses",
+            "Flat NO" : 101,
+            "Street" : "ABC",
+            "city" : "XYZ"
+        }
+        ],
+    "skills" : ["Python","C","cloud"]
+    },
+    {
+    "FirstName" : "Swetha",
+    "DOB" : "1111-11-11",
+    "Addresses" : [
+        {
+            "type" : "Premenant Addresses",
+            "Flat NO" : 101,
+            "Street" : "ABC",
+            "city" : "XYZ"
+        },
+        {
+            "type" : "Current Addresses",
+            "Flat NO" : 101,
+            "Street" : "ABC",
+            "city" : "XYZ"
+        }
+        ],
+    "skills" : ["Python","C","cloud"]
+    }
+]
+}
