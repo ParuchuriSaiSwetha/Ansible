@@ -11,7 +11,11 @@
       private: false
   tasks:
   - name: "Print name"
-    vars:
-      NAME: "Printing from tasks"
+    # vars:
+    #   NAME: "Printing from tasks"
     ansible.builtin.debug:
       msg: "Hi {{NAME}}"
+
+# if you are giving all the types of variables 1st priority is arguments
+# 1.Arguments (ansible-playbook -i inventory.ini -e 'NAME="Swetha"' 10.Variable_Preferences.yml)
+#2.Tasks
