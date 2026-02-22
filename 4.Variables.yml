@@ -1,0 +1,13 @@
+- name : Types of Variables
+  hosts: local
+  connection: local #if we will give connection local not needed to provide username and password while running the ansible code
+  vars : #defining variables in vars
+    Course: "Devops"
+    Topic : "Ansible"
+    Date : "22-Feb-2026"
+  tasks :
+  - name : "Printing the statement by using variables"
+    ansible.builtin.debug:
+      msg : "I’m learning {{ Course }}, focusing on {{ Topic }} today, on {{ Date }}"
+
+
