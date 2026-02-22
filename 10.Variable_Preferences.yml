@@ -5,10 +5,10 @@
     NAME: "Global Variables"
   # vars_files:
   # - Course.yaml
-  vars_prompt:
-    - name : NAME
-      prompt: "Please enter name"
-      private: false
+  # vars_prompt:
+  #   - name : NAME
+  #     prompt: "Please enter name"
+  #     private: false
   tasks:
   - name: "Print name"
     # vars:
@@ -20,4 +20,5 @@
 # 1.Arguments (ansible-playbook -i inventory.ini -e 'NAME="Swetha"' 10.Variable_Preferences.yml)
 #2.Tasks (ansible-playbook -i inventory.ini 10.Variable_Preferences.yml)
 #3.Files
-#4.
+#4.Prompt
+#5.global
