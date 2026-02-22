@@ -1,8 +1,8 @@
 - name : Variable Preferences
   hosts: local
   connection : local
-  vars:
-    NAME: "Global Variables"
+  # vars:
+  #   NAME: "Global Variables"
   # vars_files:
   # - Course.yaml
   # vars_prompt:
