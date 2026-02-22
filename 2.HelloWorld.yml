@@ -1,0 +1,6 @@
+- name : Writing My first Hello world code by using YAML
+  hosts: web
+  tasks :
+  - name : Hello World
+    ansible.builtin.debug :
+    "msg" : "Writing My First Hello world code "
