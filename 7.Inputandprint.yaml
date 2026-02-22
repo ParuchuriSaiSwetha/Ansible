@@ -7,7 +7,7 @@
       prompt : "Please enter your username"
       private : false
     - name : Password
-      promt : "Enter your password"
+      prompt : "Enter your password"
   tasks :
   - name : "Printing the username"
     ansible.builtin.debug:
