@@ -7,3 +7,4 @@
   - name: "trying to print Conditions"
     ansible.builtin.debug:
       msg : "Since is_live is true, i am printing it"
+    when: is_live
