@@ -13,7 +13,7 @@
       msg : "I’m learning {{ Course }}, focusing on {{ Topic }} today, on {{ Date }}"
   - name : "Install and start nginx"
     ansible.builtin.package:
-    name: nginx
-    state: present
+      name: nginx
+      state: present
 
 
