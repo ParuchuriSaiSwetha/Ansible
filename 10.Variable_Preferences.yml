@@ -5,7 +5,7 @@
     NAME: "Global Variables"
   vars_files:
   - Course.yaml
-  vars_prompts:
+  vars_prompt:
     - name : NAME
       prompt: "Please enter name"
       private: false
