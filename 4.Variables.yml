@@ -11,13 +11,14 @@
   - name : "Printing the statement by using variables"
     ansible.builtin.debug:
       msg : "I’m learning {{ Course }}, focusing on {{ Topic }} today, on {{ Date }}"
-  - name : "Install and start nginx"
+  - name: Insalling nginx
     ansible.builtin.package:
-      name: nginx
-      state: present
-  - name : "start the nginx"
+      name : nginx
+      state : present
+  - name : Start nginx
+  #to start the service ansible.builtin.service module is default
     ansible.builtin.service:
-      name: nginx
+      name : nginx
       state: started
-      enabled: yes
+      enabled : yes
 
