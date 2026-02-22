@@ -4,5 +4,5 @@
   become : yes
   tasks :
   - name : "Printing variables from inventory level"
-  absible.builtin.debug:
-    msg : "Variables are printing from {{Course}}"
+    absible.builtin.debug:
+      msg : "Variables are printing from {{Course}}"
