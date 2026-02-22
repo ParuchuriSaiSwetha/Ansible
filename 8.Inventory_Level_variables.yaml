@@ -3,6 +3,6 @@
   connection : local
   become : yes
   tasks :
-  - name : "Printing variables from inventory level"
-    absible.builtin.debug:
+  - name: "Printing variables from inventory level"
+    ansible.builtin.debug:
       msg : "Variables are printing from {{Course}}"
