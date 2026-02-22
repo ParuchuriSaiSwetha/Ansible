@@ -1,7 +1,8 @@
 - name : Types of Variables
   hosts: local
   connection: local #if we will give connection local not needed to provide username and password while running the ansible code
-  vars : #defining variables in vars
+  #for running ansible-playbook -i inventory.ini 4.Variables.yml
+  vars : #defining variables in vars which means it is declared as globally and we ca use it any where
     Course: "Devops"
     Topic : "Ansible"
     Date : "22-Feb-2026"
@@ -9,5 +10,9 @@
   - name : "Printing the statement by using variables"
     ansible.builtin.debug:
       msg : "I’m learning {{ Course }}, focusing on {{ Topic }} today, on {{ Date }}"
+  - name : "Install and start nginx"
+    ansible.builtin.playbook:
+      name: nginx
+      state: present
 
 
