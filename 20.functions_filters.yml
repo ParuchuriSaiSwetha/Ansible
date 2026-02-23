@@ -3,9 +3,9 @@
   connection : local
   vars :
     topics : linux, shell, ansible, terraform
-  Dicts :
-    name: Ansible
-    Project: Roboshop
+    Dicts :
+      name: Ansible
+      Project: Roboshop
   tasks:
   - name : Greetings
     ansible.builtin.debug:
